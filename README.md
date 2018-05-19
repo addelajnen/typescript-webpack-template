@@ -11,31 +11,31 @@ To build and run this project you need to:
 
 # getting-started
 - Clone this repository
-...
+```
 git clone git@github.com:addelajnen/typescript-webpack-template.git <project_name>
-...
+```
 - Install dependencies
-...
+```
 cd <project_name>
 npm install
-...
+```
 - Build and run the project
-...
+```
 npm run build:dev
 node "dist/__APP__.bundle.js"
-...
+```
 
 # other build options
 
 To build in production mode, run:
-...
+```
 npm run build:prod
-...
+```
 
 To run tests, run:
-...
+```
 npm run test
-...
+```
 
 # output
 
