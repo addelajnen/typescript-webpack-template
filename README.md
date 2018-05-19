@@ -39,7 +39,7 @@ npm run test
 
 # output
 
-The default projectname described in "package.json" and webpack configuration is "__APP__". 
-To change this you need to replace all occurences of "__APP__" to your own projectname in the following files:
+The default projectname described in "package.json" and webpack configuration is "\_\_APP\_\_". 
+To change this you need to replace all occurences of "\_\_APP\_\_" to your own projectname in the following files:
 - package.json
 - webpack.config.ts
