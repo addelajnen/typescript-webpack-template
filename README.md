@@ -42,4 +42,4 @@ npm run test
 The default projectname described in "package.json" and webpack configuration is "\_\_APP\_\_". 
 To change this you need to replace all occurences of "\_\_APP\_\_" to your own projectname in the following files:
 - package.json
-- webpack.config.ts
+- scripts/webpack/webpack.config.ts
