@@ -1,14 +1,11 @@
-export default class PiProvider
-{
+export default class PiProvider {
     protected PI: number;
 
-    public constructor()
-    {
+    public constructor() {
         this.PI = 3.14;
     }
 
-    public async fetchPiAsync() : Promise<number>
-    {
+    public async fetchPiAsync(): Promise<number> {
         return new Promise<number>((resolve, reject) => {
             setTimeout(() => {
                 return resolve(this.PI);

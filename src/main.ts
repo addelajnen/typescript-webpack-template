@@ -1,17 +1,13 @@
 import PiProvider from './classes/PiProvider';
 
-(async () => {
-    let pi = null;
+const main = new Promise(async (resolve, reject) => {
     try {
         process.stdout.write('fetching pi async ...');
-        pi = await (new PiProvider()).fetchPiAsync();
-        process.stdout.write('ok!\n');        
-    } catch (e) {        
+        const pi = await new PiProvider().fetchPiAsync();
+        process.stdout.write('ok!\n');
+        return resolve();
+    } catch (e) {
         process.stdout.write('failed!\n');
-        pi = null;
-    }    
-
-    if (pi !== null) {
-        process.stdout.write(`pi = ${pi}`);
+        return reject(e);
     }
-})();
+});
