@@ -3,14 +3,19 @@ import path from 'path';
 
 import nodeExternals from 'webpack-node-externals';
 
-const ROOT = path.resolve(__dirname, '..', '..');
+const basePath = path.resolve(__dirname, '..', '..');
+const srcPath = path.resolve(basePath, 'src');
+const buildPath = path.resolve(basePath, 'dist');
 
 export default {
-    context: path.join(ROOT, 'src'),
+    context: srcPath,
 
     entry: './main.ts',
 
     resolve: {
+        alias: {
+            '@': srcPath,
+        },
         extensions: ['.ts', '.tsx'],
     },
 
@@ -19,7 +24,7 @@ export default {
 
     output: {
         filename: '[name].bundle.js',
-        path: path.join(ROOT, 'dist'),
+        path: buildPath,
     },
 
     module: {

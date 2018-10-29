@@ -1,7 +1,7 @@
-import PiProvider from '../src/classes/PiProvider';
+import PiProvider from '@/classes/PiProvider';
 
 describe('pi or pie', () => {
     it('pies the pi', async () => {
-        expect(await (new PiProvider().fetchPiAsync())).toBeCloseTo(3.14);
+        expect(await new PiProvider().fetchPiAsync()).toBeCloseTo(3.14);
     });
 });

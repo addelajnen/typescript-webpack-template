@@ -1,13 +1,20 @@
-import PiProvider from './classes/PiProvider';
+import PiProvider from '@/classes/PiProvider';
 
-const main = new Promise(async (resolve, reject) => {
+new Promise(async (resolve: any, reject: any) => {
     try {
         process.stdout.write('fetching pi async ...');
         const pi = await new PiProvider().fetchPiAsync();
         process.stdout.write('ok!\n');
-        return resolve();
+
+        return resolve(pi);
     } catch (e) {
         process.stdout.write('failed!\n');
         return reject(e);
     }
-});
+})
+    .then(pi => {
+        console.log(`PI = ${pi}`);
+    })
+    .catch((reason: any) => {
+        console.log(`PI is dead`);
+    });

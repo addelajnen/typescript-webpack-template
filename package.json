@@ -4,11 +4,10 @@
     "main": "dist/app.bundle.js",
     "license": "MIT",
     "scripts": {
-        "init": "node ./scripts/init.js",
         "build:dev": "webpack-cli --config ./scripts/webpack/webpack.development.config.ts",
         "build:prod": "webpack-cli --config ./scripts/webpack/webpack.production.config.ts",
         "test": "jest",
-        "lint": "tslint --project . src/**/*.ts"
+        "lint": "tslint --project . ./src/**/*.ts"
     },
     "devDependencies": {
         "@types/jest": "^23.3.7",
@@ -44,6 +43,9 @@
             "jsx",
             "json",
             "node"
-        ]
+        ],
+        "moduleNameMapper": {
+            "^\\@\\/(.*)": "<rootDir>/src/$1"
+        }
     }
 }
