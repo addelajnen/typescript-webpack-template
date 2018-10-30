@@ -7,10 +7,11 @@
 
 # getting-started
 
-1. git clone git@github.com:addelajnen/typescript-webpack-template.git app
-2. npm install
-3. npm run build:dev
-4. node dist/main.bundle.js
+1. `git clone git@github.com:addelajnen/typescript-webpack-template.git app`
+2. `cd app`
+3. `npm install`
+4. `npm run build:dev`
+5. `node dist/main.bundle.js`
 
 # package.json scripts
 
