@@ -9,6 +9,8 @@
 
 1. git clone git@github.com:addelajnen/typescript-webpack-template.git app
 2. npm install
+3. npm run build:dev
+4. node dist/main.bundle.js
 
 # package.json scripts
 
