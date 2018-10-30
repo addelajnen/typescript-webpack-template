@@ -13,8 +13,8 @@ new Promise(async (resolve: any, reject: any) => {
     }
 })
     .then(pi => {
-        console.log(`PI = ${pi}`);
+        process.stdout.write(`PI = ${pi}\n`);
     })
     .catch((reason: any) => {
-        console.log(`PI is dead`);
+        process.stdout.write(`PI died\n`);
     });

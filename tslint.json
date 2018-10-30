@@ -1,18 +1,26 @@
 {
     "defaultSeverity": "error",
     "extends": [
-        "tslint:recommended",
+        "tslint:latest",
         "tslint-config-standard",
         "tslint-config-prettier"
     ],
     "jsRules": {},
     "rules": {
-        "ordered-imports": false,
-        "object-literal-sort-keys": false,
-        "member-ordering": false,
-        "no-bitwise": false,
-        "no-console": false,
-        "no-var-requires": false
+        "no-submodule-imports": false,
+        "no-implicit-dependencies": false,
+        "no-console": true,
+        "no-magic-numbers": {
+            "severity": "warn"
+        },
+        "no-trailing-whitespace": true,
+        "no-irregular-whitespace": true,
+        "no-var-keyword": true,
+        "no-any": {
+            "severity": "warn"
+        },
+        "no-for-in-array": true,
+        "no-use-before-declare": true
     },
     "rulesDirectory": []
 }

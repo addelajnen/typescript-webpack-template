@@ -1,5 +1,6 @@
 import webpack from 'webpack';
 import path from 'path';
+import tsConfigPaths from 'tsconfig-paths-webpack-plugin';
 
 import nodeExternals from 'webpack-node-externals';
 
@@ -13,10 +14,8 @@ export default {
     entry: './main.ts',
 
     resolve: {
-        alias: {
-            '@': srcPath,
-        },
         extensions: ['.ts', '.tsx'],
+        plugins: [new tsConfigPaths()],
     },
 
     target: 'node',

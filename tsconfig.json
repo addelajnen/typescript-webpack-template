@@ -12,12 +12,11 @@
         "noImplicitThis": true,
         "alwaysStrict": true,
         "strictNullChecks": true,
-        "declarationDir": "./dist",
-        "baseUrl": "./src",
+        "declarationDir": "dist",
+        "baseUrl": "src",
         "paths": {
             "@/*": ["./*"]
         }
     },
-    "include": ["src/**/*", "tests/**/*"],
-    "exclude": ["node_modules", "dist", "scripts"]
+    "exclude": ["node_modules", "scripts", "*.spec.ts"]
 }
