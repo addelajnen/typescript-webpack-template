@@ -11,11 +11,13 @@
 2. `cd app`
 3. `npm install`
 4. `npm run build:dev`
-5. `node dist/main.bundle.js`
+5. `npm run start`
 
 # package.json scripts
 
+-   Start application: `npm run start`
 -   Development build: `npm run build:dev`
 -   Production build: `npm run build:prod`
+-   Watch: `npm run watch`
 -   Run tests: `npm run test`
 -   Run linter: `npm run lint`

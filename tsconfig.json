@@ -1,22 +1,9 @@
 {
+    "extends": "./configs/typescript/base",
     "compilerOptions": {
-        "target": "es2015",
-        "module": "commonjs",
-        "allowSyntheticDefaultImports": true,
         "declaration": true,
-        "sourceMap": true,
-        "esModuleInterop": true,
-        "resolveJsonModule": true,
-        "noImplicitAny": true,
-        "strictFunctionTypes": true,
-        "noImplicitThis": true,
-        "alwaysStrict": true,
-        "strictNullChecks": true,
-        "declarationDir": "dist",
-        "baseUrl": "src",
-        "paths": {
-            "@/*": ["./*"]
-        }
+        "outDir": "dist",
+        "declarationDir": "dist"
     },
-    "exclude": ["node_modules", "scripts", "*.spec.ts"]
+    "include": ["src/**/*"]
 }

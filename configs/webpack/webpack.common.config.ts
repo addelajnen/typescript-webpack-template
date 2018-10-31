@@ -11,19 +11,21 @@ const buildPath = path.resolve(basePath, 'dist');
 export default {
     context: srcPath,
 
-    entry: './main.ts',
+    entry: {
+        app: './main.ts'
+    },
 
     resolve: {
         extensions: ['.ts', '.tsx'],
-        plugins: [new tsConfigPaths()],
+        plugins: [new tsConfigPaths()]
     },
 
     target: 'node',
     externals: [nodeExternals()],
 
     output: {
-        filename: '[name].bundle.js',
-        path: buildPath,
+        filename: '[name].js',
+        path: buildPath
     },
 
     module: {
@@ -31,8 +33,8 @@ export default {
             {
                 test: /\.tsx?$/,
                 loader: 'ts-loader',
-                exclude: /node_modules/,
-            },
-        ],
-    },
+                exclude: /node_modules/
+            }
+        ]
+    }
 } as webpack.Configuration;

@@ -20,7 +20,10 @@
             "severity": "warn"
         },
         "no-for-in-array": true,
-        "no-use-before-declare": true
+        "no-use-before-declare": true,
+        "ordered-imports": false,
+        "no-object-literal-type-assertion": false,
+        "object-literal-sort-keys": false
     },
     "rulesDirectory": []
 }

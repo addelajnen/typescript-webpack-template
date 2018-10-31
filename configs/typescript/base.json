@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "commonjs",
+
+        "alwaysStrict": true,
+        "esModuleInterop": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "resolveJsonModule": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+
+        "baseUrl": "../../",
+        "paths": {
+            "@/*": ["src/*"]
+        }
+    }
+}
