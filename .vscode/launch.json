@@ -5,13 +5,35 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Development",
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}\\dist\\__APP__.bundle.js",
-            "outFiles": [
-                "${workspaceFolder}/**/*.js"
-            ]
+            "cwd": "${workspaceFolder}/build",
+            "program": "${workspaceRoot}/src/app.ts",
+            "preLaunchTask": "Development build",
+            "outFiles": ["${workspaceFolder}/build/**/*.js"],
+            "internalConsoleOptions": "openOnSessionStart",
+            "sourceMaps": true
+        },
+        {
+            "name": "Production",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/build",
+            "program": "${workspaceRoot}/build/app.js",
+            "preLaunchTask": "Production build",
+            "outFiles": ["${workspaceFolder}/build/**/*.js"],
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "Tests",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/build",
+            "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
+            "preLaunchTask": "Development build",
+            "args": ["-i"],
+            "internalConsoleOptions": "openOnSessionStart"
         }
     ]
 }

@@ -1,0 +1,41 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Development build",
+            "type": "npm",
+            "script": "build:dev",
+            "problemMatcher": ["$tsc", "$eslint-stylish"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": false,
+                "reveal": "silent",
+                "focus": true,
+                "panel": "dedicated",
+                "showReuseMessage": false
+            }
+        },
+        {
+            "label": "Production build",
+            "type": "npm",
+            "script": "build:prod",
+            "problemMatcher": ["$tsc", "$eslint-stylish"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": false,
+                "reveal": "silent",
+                "focus": true,
+                "panel": "dedicated",
+                "showReuseMessage": false
+            }
+        }
+    ]
+}

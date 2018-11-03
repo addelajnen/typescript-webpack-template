@@ -2,8 +2,9 @@
     "extends": "./configs/typescript/base",
     "compilerOptions": {
         "declaration": true,
-        "outDir": "dist",
-        "declarationDir": "dist"
+        "outDir": "build",
+        "declarationDir": "build",
+        "sourceMap": true
     },
     "include": ["src/**/*"]
 }
