@@ -28,6 +28,11 @@ module.exports = {
     target: 'node',
     externals: [nodeExternals()],
 
+    node: {
+        __dirname: false,
+        __filename: false
+    },
+
     output: {
         filename: '[name].js',
         path: buildPath
