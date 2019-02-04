@@ -1,4 +1,10 @@
 {
-    "editor.formatOnSave": true,
-    "typescript.tsdk": "./node_modules/typescript/lib"
+	"tslint.enable": true,
+	"tslint.autoFixOnSave": true,
+
+    "editor.insertSpaces": false,
+    "editor.renderWhitespace": "all",	
+	"editor.tabSize": 4,
+	"editor.detectIndentation": false,
+	"editor.tabCompletion": true,
 }

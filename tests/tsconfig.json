@@ -1,5 +1,0 @@
-{
-    "extends": "../configs/typescript/base",
-    "baseUrl": ".",
-    "include": ["unit/**/*"]
-}
