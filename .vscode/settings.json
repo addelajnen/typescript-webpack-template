@@ -1,10 +1,10 @@
 {
 	"tslint.enable": true,
-	"tslint.autoFixOnSave": true,
-
-    "editor.insertSpaces": false,
-    "editor.renderWhitespace": "all",	
+    "tslint.autoFixOnSave": true,
+    "tslint.run": "onSave",        
+    "editor.autoIndent": true,
+    "editor.insertSpaces": true,
 	"editor.tabSize": 4,
 	"editor.detectIndentation": false,
-	"editor.tabCompletion": true,
+	"editor.tabCompletion": "on"
 }

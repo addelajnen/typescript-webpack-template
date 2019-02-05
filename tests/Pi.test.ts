@@ -1,5 +1,5 @@
-import { PI } from "@/Pi";
+import { PI } from '@/Pi';
 
-test("hello world", () => {
-	expect(PI).toBeCloseTo(3.14);
+test('Pi', () => {
+    expect(PI).toBeCloseTo(3.14);
 });

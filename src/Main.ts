@@ -1,3 +1,3 @@
-import { PI } from "@/Pi";
+import { PI } from '@/Pi';
 
 console.log(`PI = ${PI}`);

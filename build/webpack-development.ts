@@ -1,8 +1,10 @@
-import * as Webpack from "webpack";
+import * as Webpack from 'webpack';
 
-export default ({
-	devtool: "cheap-source-map",
-	output: {
-		devtoolModuleFilenameTemplate: "[absolute-resource-path]",
-	},
-} as Webpack.Configuration);
+const configuration: Webpack.Configuration = {
+    devtool: 'cheap-source-map',
+    output: {
+        devtoolModuleFilenameTemplate: '[absolute-resource-path]'
+    }
+};
+
+export default configuration;

@@ -1,5 +1,7 @@
-import * as Webpack from "webpack";
+import * as Webpack from 'webpack';
 
-export default ({
-	devtool: "source-map"
-} as Webpack.Configuration);
+const configuration: Webpack.Configuration = {
+    devtool: 'source-map'
+};
+
+export default configuration;
