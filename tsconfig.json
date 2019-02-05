@@ -1,13 +1,15 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-
     "target": "es6",
     "module": "commonjs",
-
     "alwaysStrict": true,
     "esModuleInterop": true,
-
-    "noUnusedLocals": true
-  }  
+    "noUnusedLocals": true,
+	"sourceMap": true,
+	"resolveJsonModule": true,
+	"paths": {
+		"@/*": ["src/*"]
+	}
+  }
 }
