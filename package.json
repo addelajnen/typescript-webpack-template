@@ -1,9 +1,15 @@
 {
   "name": "typescript-webpack-template",
+  "scripts": {
+    "build:development": "webpack --mode development",
+    "build:production": "webpack --mode production",
+    "test": "jest --config ./jest.config.js"
+  },
   "devDependencies": {
     "@types/jest": "^26.0.3",
     "@types/webpack": "^4.41.18",
     "jest": "^26.1.0",
+    "pnp-webpack-plugin": "^1.6.4",
     "ts-jest": "^26.1.1",
     "ts-loader": "^7.0.5",
     "typescript": "^3.9.6",

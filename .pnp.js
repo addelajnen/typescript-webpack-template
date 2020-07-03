@@ -42,6 +42,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "npm:26.1.0"
       ],
       [
+        "pnp-webpack-plugin",
+        "npm:1.6.4"
+      ],
+      [
         "ts-jest",
         "virtual:8952fe54238b3906faa542d035fc321c77cc8d4fdd90e74a1b3511e1cc67107fb9d69f5d02512089c210bbad4c1c24a4a4a221aa8a62a8569b697a461805754e#npm:26.1.1"
       ],
@@ -72,6 +76,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:26.0.3"],
             ["@types/webpack", "npm:4.41.18"],
             ["jest", "npm:26.1.0"],
+            ["pnp-webpack-plugin", "npm:1.6.4"],
             ["ts-jest", "virtual:8952fe54238b3906faa542d035fc321c77cc8d4fdd90e74a1b3511e1cc67107fb9d69f5d02512089c210bbad4c1c24a4a4a221aa8a62a8569b697a461805754e#npm:26.1.1"],
             ["ts-loader", "virtual:8952fe54238b3906faa542d035fc321c77cc8d4fdd90e74a1b3511e1cc67107fb9d69f5d02512089c210bbad4c1c24a4a4a221aa8a62a8569b697a461805754e#npm:7.0.5"],
             ["typescript", "patch:typescript@npm%3A3.9.6#builtin<compat/typescript>::version=3.9.6&hash=64df9d"],
@@ -5870,6 +5875,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["pnp-webpack-plugin", [
+        ["npm:1.6.4", {
+          "packageLocation": "./.yarn/cache/pnp-webpack-plugin-npm-1.6.4-c497046afc-39a484182f.zip/node_modules/pnp-webpack-plugin/",
+          "packageDependencies": [
+            ["pnp-webpack-plugin", "npm:1.6.4"],
+            ["ts-pnp", "virtual:c497046afcbefb679e3fe12575088ec12205b913a36c3d158b27e7cd646d448426540ab27ba98e54ddb75b1ed97de7e3ce5dc0158c9ba4e76ce942c87e5d02d8#npm:1.2.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["posix-character-classes", [
         ["npm:0.1.1", {
           "packageLocation": "./.yarn/cache/posix-character-classes-npm-0.1.1-3e228a6e15-984f83c2d4.zip/node_modules/posix-character-classes/",
@@ -7312,6 +7327,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["ts-pnp", [
+        ["virtual:c497046afcbefb679e3fe12575088ec12205b913a36c3d158b27e7cd646d448426540ab27ba98e54ddb75b1ed97de7e3ce5dc0158c9ba4e76ce942c87e5d02d8#npm:1.2.0", {
+          "packageLocation": "./.yarn/$$virtual/ts-pnp-virtual-abd2827f29/0/cache/ts-pnp-npm-1.2.0-43620de7df-78341a2793.zip/node_modules/ts-pnp/",
+          "packageDependencies": [
+            ["ts-pnp", "virtual:c497046afcbefb679e3fe12575088ec12205b913a36c3d158b27e7cd646d448426540ab27ba98e54ddb75b1ed97de7e3ce5dc0158c9ba4e76ce942c87e5d02d8#npm:1.2.0"],
+            ["typescript", null]
+          ],
+          "packagePeers": [
+            "typescript"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["tslib", [
         ["npm:1.13.0", {
           "packageLocation": "./.yarn/cache/tslib-npm-1.13.0-f5e9ea9b66-5dc3bdaea3.zip/node_modules/tslib/",
@@ -7427,6 +7455,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:26.0.3"],
             ["@types/webpack", "npm:4.41.18"],
             ["jest", "npm:26.1.0"],
+            ["pnp-webpack-plugin", "npm:1.6.4"],
             ["ts-jest", "virtual:8952fe54238b3906faa542d035fc321c77cc8d4fdd90e74a1b3511e1cc67107fb9d69f5d02512089c210bbad4c1c24a4a4a221aa8a62a8569b697a461805754e#npm:26.1.1"],
             ["ts-loader", "virtual:8952fe54238b3906faa542d035fc321c77cc8d4fdd90e74a1b3511e1cc67107fb9d69f5d02512089c210bbad4c1c24a4a4a221aa8a62a8569b697a461805754e#npm:7.0.5"],
             ["typescript", "patch:typescript@npm%3A3.9.6#builtin<compat/typescript>::version=3.9.6&hash=64df9d"],
