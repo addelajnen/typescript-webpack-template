@@ -1,19 +1,29 @@
 {
-  "name": "typescript-webpack-template",
-  "scripts": {
-    "build:development": "webpack --mode development",
-    "build:production": "webpack --mode production",
-    "test": "jest --config ./jest.config.js"
-  },
-  "devDependencies": {
-    "@types/jest": "^26.0.3",
-    "@types/webpack": "^4.41.18",
-    "jest": "^26.1.0",
-    "pnp-webpack-plugin": "^1.6.4",
-    "ts-jest": "^26.1.1",
-    "ts-loader": "^7.0.5",
-    "typescript": "^3.9.6",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12"
-  }
+	"name": "typescript-webpack-template",
+	"version": "1.0.0",
+	"main": "dist/index.js",
+	"repository": "git@github.com:addelajnen/typescript-webpack-template.git",
+	"author": "addelajnen <addelajnen@outlook.com>",
+	"license": "MIT",
+	"scripts": {
+		"build:development": "webpack --mode development",
+		"build:production": "webpack --mode production",
+		"lint": "eslint . --ext .ts",
+		"test:unit": "jest"
+	},
+	"devDependencies": {
+		"@types/jest": "^26.0.13",
+		"@types/node": "^14.10.1",
+		"@types/webpack": "^4.41.22",
+		"@typescript-eslint/eslint-plugin": "^4.1.0",
+		"@typescript-eslint/parser": "^4.1.0",
+		"eslint": "^7.9.0",
+		"jest": "^26.4.2",
+		"ts-jest": "^26.3.0",
+		"ts-loader": "^8.0.3",
+		"ts-node": "^9.0.0",
+		"typescript": "^4.0.2",
+		"webpack": "^4.44.1",
+		"webpack-cli": "^3.3.12"
+	}
 }

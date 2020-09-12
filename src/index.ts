@@ -1,12 +1,8 @@
-export class Greeter {
-	private greeting: string
+export default class ExampleClass {
+	public readonly PI: number
 
-	public constructor(greeting: string) {
-		this.greeting = greeting
-	}
-
-	public greet() {
-		return this.greeting
+	public constructor() {
+		this.PI = 3.14
 	}
 }
 
