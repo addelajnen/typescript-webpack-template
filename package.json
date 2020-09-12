@@ -1,52 +1,29 @@
 {
-	"name": "app",
+	"name": "typescript-webpack-template",
 	"version": "1.0.0",
-	"main": "build/app.js",
+	"main": "dist/index.js",
+	"repository": "git@github.com:addelajnen/typescript-webpack-template.git",
+	"author": "addelajnen <addelajnen@outlook.com>",
 	"license": "MIT",
 	"scripts": {
-		"build:dev": "webpack-cli --progress --config ./configs/webpack/webpack.development.config",
-		"build:prod": "webpack-cli --progress --config ./configs/webpack/webpack.production.config",
-		"watch": "webpack-cli --watch --progress --config ./configs/webpack/webpack.development.config",
-		"start": "nodemon",
-		"test": "jest",
-		"lint": "eslint src/**"
+		"build:development": "webpack --mode development",
+		"build:production": "webpack --mode production",
+		"lint": "eslint . --ext .ts",
+		"test:unit": "jest"
 	},
 	"devDependencies": {
-		"@types/jest": "25.1.1",
-		"@types/node": "13.7.0",
-		"@types/webpack": "4.41.4",
-		"@typescript-eslint/eslint-plugin": "2.19.0",
-		"@typescript-eslint/parser": "2.19.0",
-		"eslint": "6.8.0",
-		"jest": "25.1.0",
-		"nodemon-webpack-plugin": "4.2.2",
-		"prettier": "1.19.1",
-		"ts-jest": "25.2.0",
-		"ts-loader": "6.2.1",
-		"ts-node": "8.6.2",
-		"tsconfig-paths-webpack-plugin": "3.2.0",
-		"typescript": "3.7.5",
-		"webpack": "4.41.5",
-		"webpack-cli": "3.3.10",
-		"webpack-merge": "4.2.2",
-		"webpack-node-externals": "1.7.2"
-	},
-	"jest": {
-		"transform": {
-			"^.+\\.tsx?$": "ts-jest"
-		},
-		"testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-		"moduleFileExtensions": [
-			"ts",
-			"tsx",
-			"js",
-			"jsx",
-			"json",
-			"node"
-		],
-		"moduleNameMapper": {
-			"@/(.*)": "<rootDir>/src/$1"
-		}
-	},
-	"dependencies": {}
+		"@types/jest": "^26.0.13",
+		"@types/node": "^14.10.1",
+		"@types/webpack": "^4.41.22",
+		"@typescript-eslint/eslint-plugin": "^4.1.0",
+		"@typescript-eslint/parser": "^4.1.0",
+		"eslint": "^7.9.0",
+		"jest": "^26.4.2",
+		"ts-jest": "^26.3.0",
+		"ts-loader": "^8.0.3",
+		"ts-node": "^9.0.0",
+		"typescript": "^4.0.2",
+		"webpack": "^4.44.1",
+		"webpack-cli": "^3.3.12"
+	}
 }
