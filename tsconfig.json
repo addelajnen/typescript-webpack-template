@@ -1,8 +1,7 @@
 {
-	"extends": "./tsconfig.base.json",
-	"declaration": true,
-	"declarationMap": true,
-	"exclude": [
-		"**/*.spec.ts"
-	]
+    "extends": "./tsconfig.base.json",
+    "exclude": [
+        "**/*.test.ts",
+        "**/*.spec.ts"
+    ]
 }

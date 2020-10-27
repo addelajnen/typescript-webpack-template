@@ -1,27 +1,25 @@
-import { ConfigurationFactory } from "webpack"
-import { resolve } from "path"
+import path from 'path';
+import webpack from 'webpack';
 
-export default ((env, args) => ({
-	context: resolve(__dirname, "src"),
-	entry: "./index.ts",
-	devtool: args.mode === "production" ? "cheap-source-map" : "eval-cheap-source-map",
+const config: webpack.Configuration = {
+	context: path.resolve(__dirname, 'src'),
+	entry: './index.ts',
 	module: {
 		rules: [
 			{
 				test: /\.tsx?$/,
-				use: "ts-loader",
+				use: 'ts-loader',
 				exclude: /node_modules/,
 			},
 		],
 	},
 	resolve: {
-		alias: {
-			"@": "."
-		},
-		extensions: [".tsx", ".ts", ".js"],
+		extensions: ['.ts', '.tsx', '.js', '.json'],
 	},
 	output: {
-		filename: "index.js",
-		path: resolve(__dirname, "dist")
+		filename: 'index.js',
+		path: path.resolve(__dirname, 'dist'),
 	}
-})) as ConfigurationFactory
+}
+
+export default config
